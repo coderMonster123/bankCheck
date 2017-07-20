@@ -10,9 +10,9 @@
 
 </style>
 </head>
-<body>
+<body >
 
-    <iframe  id="iframe" width="1000" height="768" scrolling="yes" frameborder="0"   src= "http://t.cn/RK7V1N2">
+    <iframe id="iframe" width="1000" height="768" scrolling="yes" frameborder="0"   src= "http://t.cn/RK7V1N2">
 </iframe>
 
 
@@ -21,17 +21,17 @@
 
     <script type="text/javascript" language="javascript">
         function iFrameHeight() {
-            /*  var ifm= document.getElementById("iframe");
-             var subWeb = document.frames ? document.frames["iframe"].document : ifm.contentDocument;
-             if(ifm != null && subWeb != null) {
-             ifm.height = subWeb.body.scrollHeight;
-             ifm.width = subWeb.body.scrollWidth;
-             }*/
+              var ifm= document.getElementById("iframe");
+
+             //ifm.height = document.body.scrollHeight;
+             ifm.width = document.body.scrollWidth;
+
         }
         function Center(){
             var img=document.getElementsByTagName("img")[0];
-           img.style.left=500-img.width/2+"px";
+           img.style.left=document.body.scrollWidth/2-img.width/2+"px";
        //   alert(document.body.clientWidth/2);
+            iFrameHeight();
         }
 
     </script>
