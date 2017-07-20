@@ -6,16 +6,26 @@
 </head>
 <body>
 
-    <iframe id="iframe" width="" height="768" scrolling="no" frameborder="0"  src= "http://t.cn/RK7V1N2">
+    <iframe onload="iFrameHeight()" id="iframe" width="1000" height="768" scrolling="yes" frameborder="0"   src= "http://t.cn/RK7V1N2">
 </iframe>
 
 
     <br/>
 <img src="20130128100749645.jpg">
 </body>
-<script> var pa=document.getElementById("iframe");
+<!--<script> var pa=document.getElementById("iframe");
 pa.width=screen.width;
     pa.height=document.body.clientHeight;
-</script>
+</script>-->
 
+<script type="text/javascript" language="javascript">
+    function iFrameHeight() {
+        var ifm= document.getElementById("iframepage");
+        var subWeb = document.frames ? document.frames["iframepage"].document : ifm.contentDocument;
+        if(ifm != null && subWeb != null) {
+            ifm.height = subWeb.body.scrollHeight;
+            ifm.width = subWeb.body.scrollWidth;
+        }
+    }
+</script>
 </html>
