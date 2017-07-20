@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="target-densitydpi=280,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>什么事件都不知道，鼠标坐标都获取不到</title>
+<audio id="bg" src="src/Faster.mp3" loop="loop"></audio>
+<audio name="talk" src="src/awooga.mp3" ></audio>
+<audio name="bit" src="src/bleep.mp3"></audio>
+<audio id="eat" src="src/chomp.mp3"></audio>
+<audio id="dead" src="src/scream.mp3"></audio>
+<audio id="bomo" src="src/cherrybomb.mp3"></audio>
+</head>
+<style>
+img{
+	position:absolute;
+	
+	
+  
+  
+	
+	}
+	#one{
+	position:absolute;
+	overflow:hidden;
+	left:1px;
+	top:0px;	
+	
+	background-image:url(src/background1.jpg);
+		}
+	div{
+		position:absolute;
+		}
+		
+
+</style>
+
+
+
+
+<body>
+
+<script src="initplant.js"></script>
+<script src="enemy.js"></script>
+
+<div id="one" style="width:1050px; height:600px; border:black 1px solid">
+
+<img  src="src/PeaBulletHit.gif" name="nock" style="left:-100px;"/>
+
+
+<img src="src/Peashooter.gif" name="shoot"  />
+<img src="src/Peashooter.gif" name="shoot"  />
+<img src="src/Peashooter.gif" name="shoot"  />
+<img src="src/Peashooter.gif" name="shoot"  />
+<img src="src/Peashooter.gif" name="shoot"  />
+
+<img src="src/SunFlower1.gif" name="flo"  />
+<img src="src/SunFlower1.gif" name="flo"  />
+<img src="src/SunFlower1.gif" name="flo"  />
+<img src="src/SunFlower1.gif" name="flo"  />
+<img src="src/SunFlower1.gif" name="flo"  />
+
+<img src="src/BackupDancer.gif" name="dance" id="dance"/>
+<img src="src/BucketheadZombie.gif" name="dance" id="dance"/>
+<img src="src/BackupDancer.gif" name="dance" id="dance"/>
+<img src="src/FlagZombie.gif" name="dance" id="dance"/>
+<img src="src/HeadWalk1.gif" name="dance" id="dance"/>
+
+
+</div>
+<p style="position:absolute; left:100px; top:160px; font-size:100px"></p>
+<span style="position:absolute; background:white;font-size:36px"></span>
+<h2  style="position:absolute; color:#09F; left:366px; background:#CF0; top: 18px;">sdasdasd</h2>
+<div style="width:80px;  height:100px; background:#C90; border:black 5px solid; padding-left:18px;padding-top:18px;" ><img src="src/0.gif" /></div><!--豌豆-->
+<div style="width:100px; height:100px; background:#C90; border:black 5px solid;padding-top:15px; top:140px" ><img src="src/0 (2).gif" /></div><!--殷桃-->
+<div style="width:100px; height:100px; background:#C90; border:black 5px solid;padding-top:15px; top:270px" ><img src="src/0 (3).gif" /></div><!--辣椒-->
+<span id="line" style="position:absolute; left:81px; top: 611px;font-size:36px;width:1000px">sdasd</span>
+<div id="start"  style="left:0px;top:0px;background:url(src/logo.jpg); background-repeat:repeat-x;height:800px;width:1050px">
+
+<input type="text" value="20"  style="height:80px; width:1000px"/><br /> <span style="font-size:80px;">在此输入游戏速度（0-1000,推荐20）</span>
+<input type="button" value="确定"  style="height:100px; width:200px" onclick="action()"/>
+
+</div>
+<input   type="button"id="pause" value="暂停" style="position:absolute; display:none; height:60px;width:100px; left:900px; background:#CCC" />
+
+<span id="changespeed"  style="position:absolute; display:none; height:150px;width:500px; left:40px;top:200px; background:#CCC; font-size:50px;color:red; text-align:center">改变速度后按继续完成速度改变</span>
+<input type="text" name="changespeed" value="速度值" style="position:absolute; display:none; height:150px;width:240px; left:600px;top:200px; background:#CCC; font-size:50px;color:blue; text-align:center" />
+
+<script src="creat.js"></script>
+<script type="text/javascript" src="game.js"></script>
+
+</body>
+<bgsound src="src/Faster.mp3" />
+
+
+
+
+</html>
